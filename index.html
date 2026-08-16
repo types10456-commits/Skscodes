@@ -42,6 +42,17 @@
         linear-gradient(135deg, #0a0a1a 0%, #12122a 40%, #1a0a2e 100%);
       animation: liquidShift 18s ease-in-out infinite alternate;
     }
+    .logo-bg-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;              /* change size */
+  opacity: 0.06;             /* make lighter or darker */
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+}
 
     @keyframes liquidShift {
       0% {
@@ -303,6 +314,8 @@
   </style>
 </head>
 <body>
+
+  <img src="bg.png" class="logo-bg-img" alt="">
   <div class="background"></div>
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
